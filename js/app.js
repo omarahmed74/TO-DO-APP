@@ -79,7 +79,7 @@ let addTask = (taskName , taskImage , taskDate) => {
     } else if (valueLength > 20) {
       errors.push("Please Enter Data Less Than 20 Character");
     }
-       
+       alert("Hey, Please Fill All Of the Inputs~~")
   } else if (taskValue.trim() != "" || valueLength > 3 || valueLength < 20){
      errors = [];
 
