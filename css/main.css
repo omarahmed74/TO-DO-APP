@@ -1,0 +1,110 @@
+body {
+    background-color: #000F6F;
+}
+
+.container .bg {
+    background-color: #001fa8;
+}
+
+.none {
+    display: none;
+}
+
+.redFlag{
+    border: 1px solid red;
+}
+
+.blueFlag{
+    border: 1px solid blue;
+}
+
+#allTasks i {
+    font-size: 20px;
+    color: #dc3545;
+    float: right;
+    cursor: pointer;
+}
+
+
+.checked {
+    background-color: blue;
+    text-decoration: line-through;
+}
+
+
+.block {
+    display: block;
+}
+
+
+.color {
+    color: white;
+}
+
+.bg-11 {
+    background-color: #001fa8;
+}
+
+
+
+.dark{
+    background-color: white;
+    color: black;
+}
+
+.dark i{
+    color: white;
+}
+
+
+i{
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+}
+
+.si {
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.spinner {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.847);
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 1s;
+}
+
+.spinner::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 20px;
+    border-left:  7px black solid;
+    border-right:  7px black solid;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    from {
+       transform: rotate(1turn);
+    }
+    
+    to {
+        transform: rotate(20turn);
+    }
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+ }
